@@ -1,0 +1,108 @@
+.movieContainer {
+  background-color: #000;
+  color: white;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.movieSlider {
+  display: flex;
+  transition: all 0.3s linear;
+  user-select: none;
+  overflow-y: hidden;
+  overflow-x: auto;
+  overflow: hidden;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  scroll-behavior: smooth;
+}
+.btnLeft {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-20%);
+  z-index: 20;
+  transform-origin: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 50px;
+  width: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.btnLeft:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.btnLeft:hover svg {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.btnLeft svg {
+  opacity: 0.7;
+  font-size: 50px;
+  transition: all 0.3s linear;
+}
+.btnRight {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-20%);
+  z-index: 20;
+  transform-origin: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 50px;
+  width: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.btnRight:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.btnRight:hover svg {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.btnRight svg {
+  opacity: 0.7;
+  font-size: 50px;
+  transition: all 0.3s linear;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.detailMovie {
+  background-color: #000;
+  color: white;
+  height: 500px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1.6;
+  border: 1px solid white;
+}
+.movieInfo {
+  display: flex;
+  flex-direction: column;
+}
+.movieTitle {
+  font-size: 36px;
+}
+
+.movieRate {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
